@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Reserva de Viagem Avançado</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Formulário de Reserva de Viagem</h1>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Informações Pessoais</legend>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Serviços Desejados</legend>
+            <label><input type="checkbox" name="servicos" value="compra-passagens"> Compra de Passagens</label>
+            <label><input type="checkbox" name="servicos" value="reserva-hospedagem"> Reserva de Hospedagem</label>
+            <label><input type="checkbox" name="servicos" value="aluguel-veiculos"> Aluguel de Veículos</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Forma de Pagamento</legend>
+            <label><input type="radio" name="pagamento" value="cartao-credito" required> Cartão de Crédito</label>
+            <label><input type="radio" name="pagamento" value="boleto" required> Boleto</label>
+            <label><input type="radio" name="pagamento" value="pix" required> PIX</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Prazo de Pagamento</legend>
+            <label for="prazo">Escolha o prazo:</label>
+            <select id="prazo" name="prazo" required>
+                <option value="a-vista">À Vista</option>
+                <option value="cinco-vezes">Cinco Vezes Sem Juros</option>
+                <option value="dez-vezes">Dez Vezes Com Juros</option>
+            </select>
+        </fieldset>
+
+        <input type="submit" value="Enviar">
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
